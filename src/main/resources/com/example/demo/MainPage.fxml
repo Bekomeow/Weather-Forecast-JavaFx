@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9eafe" height="93.0" layoutX="14.0" layoutY="233.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="189.0" />
+      <ImageView fitHeight="494.0" fitWidth="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@weatherBackground.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9eafe" height="93.0" layoutX="155.0" layoutY="11.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="189.0" />
+      <TextField fx:id="cityField" alignment="CENTER" layoutX="80.0" layoutY="130.0" prefHeight="33.0" prefWidth="198.0" promptText="City Name" style="-fx-background-radius: 50; -fx-background-color: #A9EAFE; -fx-border-color: #FFFFFF; -fx-border-radius: 50; -fx-border-width: 2;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="checkButton" layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="97.0" style="-fx-background-radius: 50; -fx-background-color: #FFFFFF;" text="check" textAlignment="CENTER" textFill="#67cdff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="156.0" layoutY="28.0" prefHeight="38.0" prefWidth="125.0" text="WEATHER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="60.0" prefHeight="39.0" prefWidth="130.0" text="FORECAST" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Text fx:id="Temperature" fill="WHITE" layoutX="33.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature:" wrappingWidth="275.9999585832868">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="FeelsLike" fill="WHITE" layoutX="33.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels Like:" wrappingWidth="275.9999585832868">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="Humidity" fill="WHITE" layoutX="33.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity:" wrappingWidth="275.9999585832868">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="Wind" fill="WHITE" layoutX="33.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wind:" wrappingWidth="275.9999585832868">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="Pressure" fill="WHITE" layoutX="33.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:" wrappingWidth="275.9999585832868">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
